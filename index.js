@@ -1,4 +1,4 @@
-module.exports = function (xs, fn) {
+module.exports = function (xs, fn = ()=>{}) {
     var res = [];
     for (var i = 0; i < xs.length; i++) {
         var x = fn(xs[i], i);
