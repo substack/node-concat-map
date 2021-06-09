@@ -37,3 +37,10 @@ test('undefs', function (t) {
     t.same(ys, [ undefined, undefined, undefined, undefined ]);
     t.end();
 });
+
+test('default function', function (t) {
+    var xs = [ 'a', 'b', 'c', 'd' ];
+    var ys = concatMap(xs);
+    t.same(ys, [ undefined, undefined, undefined, undefined ]);
+    t.end();
+});
